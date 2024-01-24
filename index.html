@@ -14,16 +14,7 @@
     <link rel="stylesheet" href="output.css" />
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <section class="main-wrapper">
@@ -50,13 +41,16 @@
         </h4>
         <button class="btn">Get Started</button>
       </div>
-      <img src="./images/illustration-working.svg" alt="" />
+      <div class="img-wrapper">
+        <img src="./images/illustration-working.svg" alt="" />
+
+      </div>
     </section>
 
     <section class="form">
       <div class="form-wrapper">
-        <input type="url" placeholder="Shorten a link here..." />
-        <button class="btn">Shorten it!</button>
+        <input type="url" id="url" placeholder="Shorten a link here..." />
+        <button class="btn" id="shorten">Shorten it!</button>
       </div>
 
       <div class="shortened-links">

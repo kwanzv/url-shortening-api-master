@@ -68,6 +68,19 @@ nav {
   grid-template: 1fr/1fr 1fr;
   gap: 1rem;
 
+  @media screen and (max-width: 768px) {
+    grid-template: 1fr/1fr;
+    text-align: center;
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      margin: 0 auto;}
+
+    
+  }
+
   .text-wrapper {
     display: flex;
     flex-direction: column;
@@ -115,6 +128,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: invert(70%);
+  
   input {
     width: 60%;
     outline: none;
@@ -129,7 +143,6 @@ button {
   }
 
 }
-
 
 .shortened-link {
   margin-top: 1rem;
